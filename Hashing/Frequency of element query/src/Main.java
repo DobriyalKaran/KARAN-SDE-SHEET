@@ -75,7 +75,6 @@ public class Main {
     }
     public static  int[] solve(int[] A, int[] B) {
         int[] ans = new int[B.length];
-
         HashMap<Integer,Integer> map = new HashMap<>();
 
         for(int i=0; i<A.length; i++)
@@ -98,3 +97,5 @@ public class Main {
     }
 }
 
+// TC : O(N)
+// SC : O(N)
