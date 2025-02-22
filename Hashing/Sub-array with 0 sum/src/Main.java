@@ -31,8 +31,6 @@ public class Main {
         System.out.println(ans);
     }
     public static int solve(int[] A) {
-        // Just write your code below to complete the function. Required Input is available to you as the function arguments.
-        // Do not print the result or any output. Just return the result via this function.
         HashSet<Long> set = new HashSet<>();
         long[] pf = new long[A.length];
         pf[0] = A[0];
@@ -55,3 +53,5 @@ public class Main {
         return 0;
     }
 }
+// TC : O(N)
+// SC : O(N)
