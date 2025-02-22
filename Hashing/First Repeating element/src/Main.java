@@ -38,3 +38,5 @@ public class Main {
         return A[index];
     }
 }
+// TC : O(N)
+// SC : O(N)
