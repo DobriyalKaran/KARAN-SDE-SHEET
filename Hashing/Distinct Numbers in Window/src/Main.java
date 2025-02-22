@@ -24,8 +24,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        int[] A = {1,1,2,2};
-        int B = 1;
+        int[] A = {1, 2, 1, 3, 4, 3};
+        int B = 3;
         List<Integer> ls = new ArrayList<>();
         HashMap<Integer,Integer> map = new HashMap<>();
         for(int i=0; i<B; i++)
