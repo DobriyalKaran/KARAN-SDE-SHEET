@@ -61,8 +61,40 @@
 //The frequency of learner 3 in the array A is 0 (they did not participate in any contest).
 //The frequency of learner 2 in the array A is 2 (they participated in two contests).
 
+import java.util.HashMap;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+       int[]  A  = {1, 2, 1, 1};
+       int[]  B = {1, 2};
+       int[] ans = solve(A,B);
+       for(int i : ans)
+       {
+           System.out.println(i);
+       }
+    }
+    public static  int[] solve(int[] A, int[] B) {
+        int[] ans = new int[B.length];
+
+        HashMap<Integer,Integer> map = new HashMap<>();
+
+        for(int i=0; i<A.length; i++)
+        {
+            if(map.containsKey(A[i]))
+            {
+                map.put(A[i],map.get(A[i])+1);
+            }
+            else map.put(A[i],1);
+        }
+
+        for(int i =0; i<B.length; i++)
+        {
+            if(map.containsKey(B[i]))
+            {
+                ans[i] = map.get(B[i]);
+            }
+        }
+        return ans;
     }
 }
+
