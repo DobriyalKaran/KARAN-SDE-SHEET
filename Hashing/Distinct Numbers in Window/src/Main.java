@@ -64,3 +64,6 @@ public class Main {
         for(int i : ans) System.out.println(i);
     }
 }
+
+// TC : O(N)
+// SC : O(N)
