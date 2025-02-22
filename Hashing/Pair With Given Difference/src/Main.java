@@ -31,7 +31,7 @@ public class Main {
 
         for(int i=0; i<A.length; i++)
         {
-            int value = Math.max(A[i],B) + Math.min(A[i],B);
+            int value = A[i] + B;
             if(st.contains(value)) return 1;
         }
         return 0;
