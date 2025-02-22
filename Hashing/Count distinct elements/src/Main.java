@@ -24,3 +24,5 @@ public class Main {
         return st.size();
     }
 }
+// TC : O(N)
+// SC : O(N)
