@@ -64,7 +64,7 @@ Welcome to the **Ultimate DSA Guide**! This repository contains solutions, expla
 
 1️⃣ Clone the repository:  
 ```sh
- git clone https://github.com/yourusername/DSA.git
+ git clone https://github.com/DobriyalKaran/DSA.git
 ```
 
 2️⃣ Navigate to the folder:  
