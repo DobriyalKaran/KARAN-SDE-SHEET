@@ -42,3 +42,5 @@ public class Main {
         return count;
     }
 }
+// TC : O(N)
+// SC : ON)
