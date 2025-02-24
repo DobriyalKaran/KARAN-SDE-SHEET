@@ -20,7 +20,7 @@ Welcome to the **Ultimate DSA Guide**! This repository contains solutions, expla
 ✔️ **Sorting** - 18 questions  
 ✔️ **Binary Search** - 31 questions  
 ✔️ **String** - 29 questions  
-✔️ **Hashing** - 24 questions  
+✔️ **Hashing** - 20 questions  
 ✔️ **Greedy** - 17 questions  
 ✔️ **Heaps** - 17 questions  
 ✔️ **Trie** - 13 questions  
