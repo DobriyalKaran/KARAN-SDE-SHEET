@@ -57,3 +57,5 @@ public class Main {
         return 1;
     }
 }
+// TC : O(N^2)
+// SC : O(N)
