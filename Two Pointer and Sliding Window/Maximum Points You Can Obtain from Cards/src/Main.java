@@ -54,5 +54,5 @@ public class Main {
     }
 }
 
-// TC : O(N)
+// TC : O(K)
 // SC : O(1)
