@@ -35,12 +35,22 @@ Constraints:
 
 public class Main {
     public static void main(String[] args) {
-        int[] A = {1,2,3,4,5,6,1};
+        int[] A = {1,79,80,1,1,1,200,1};
         int B = 3;
         System.out.println(maxScore(A,B));
     }
     public static int maxScore(int[] cardPoints, int k) {
-        return 0;
+        int sum = 0;
+        int maxScore = 0;
+        int n = cardPoints.length;
+        for(int i=0; i<k; i++) sum += cardPoints[i];
+        maxScore = sum;
+        for(int i=0; i<k; i++)
+        {
+            sum = sum - cardPoints[(k-1)-i] + cardPoints[(n-1)-i];
+            maxScore = Math.max(sum,maxScore);
+        }
+        return  Math.max(sum,maxScore);
     }
 }
 
