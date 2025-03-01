@@ -56,5 +56,5 @@ public class Main {
         return count;
     }
 }
-// TC : O(N)
+// TC: O(N)
 // SC: O(1)
