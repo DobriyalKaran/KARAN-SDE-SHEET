@@ -38,15 +38,49 @@ Constraints:
  */
 
 
+import java.util.Arrays;
+import java.util.PriorityQueue;
+
 public class Main {
     public static void main(String[] args) {
         int[] startTime = {1,2,3,3}, endTime = {3,4,5,6}, profit = {50,10,40,70};
         System.out.println(jobScheduling(startTime,endTime,profit));
     }
     public static int jobScheduling(int[] startTime, int[] endTime, int[] profit) {
-        return 0;
+        int n = startTime.length;
+        int[][] jobs = new int[n][3];
+
+        // Step 1: Store jobs and sort by start time
+        for (int i = 0; i < n; i++) {
+            jobs[i] = new int[]{startTime[i], endTime[i], profit[i]};
+        }
+        Arrays.sort(jobs, (a, b) -> a[0] - b[0]); // Sort by start time
+
+        // Step 2: Min Heap (endTime, totalProfit)
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
+        int maxProfit = 0;
+
+        // Step 3: Process each job
+        for (int[] job : jobs) {
+            int start = job[0], end = job[1], jobProfit = job[2];
+
+            // Remove jobs that ended before this job starts
+            while (!pq.isEmpty() && pq.peek()[0] <= start) {
+                maxProfit = Math.max(maxProfit, pq.poll()[1]); // Update max profit
+            }
+
+            // Add current job with updated max profit
+            pq.offer(new int[]{end, maxProfit + jobProfit});
+        }
+
+        // Step 4: Get max profit from heap
+        while (!pq.isEmpty()) {
+            maxProfit = Math.max(maxProfit, pq.poll()[1]);
+        }
+
+        return maxProfit;
     }
 }
 
-// TC : O()
-// SC : O()
+// TC : O(NlogN)
+// SC : O(N)
