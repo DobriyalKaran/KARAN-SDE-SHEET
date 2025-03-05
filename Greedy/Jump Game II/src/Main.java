@@ -38,19 +38,19 @@ public class Main {
         System.out.println(jump(A));
     }
     public static int jump(int[] nums) {
-        int jumps = 0, l = 0, r = 0;
-        while(r < nums.length-1)
-        {
-            jumps++;
-            int farthest = r;
-            while(l<=r){
-                farthest = Math.max(farthest,l+nums[l]);
-                l++;
+            int jumps = 0, l = 0, r = 0;
+            while(r < nums.length-1)
+            {
+                int farthest = 0;
+                for(int i=l; i<=r; i++)
+                {
+                    farthest = Math.max(farthest,i + nums[i]);
+                }
+                jumps++;
+                l = r+1;
+                r = farthest;
             }
-            r = farthest;
-            if(r >= nums.length - 1) break;
-        }
-        return jumps;
+            return jumps;
     }
 }
 
