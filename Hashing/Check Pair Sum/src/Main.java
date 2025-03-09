@@ -28,25 +28,14 @@ public class Main {
         System.out.println(solve(A,B));
     }
     public static  int solve(int A, int[] B) {
-        HashMap<Integer,Integer> map = new HashMap<>();
-        for(int i=0; i<B.length; i++){
-            if(map.containsKey(B[i]))
-            {
-                map.put(B[i], map.get(B[i])+1);
-            }
-            else map.put(B[i],1);
+        HashSet<Integer> set = new HashSet<>();
+
+        for (int num : B) {
+            int target = A - num;
+            if (set.contains(target)) return 1;  // Pair mil gaya
+            set.add(num);  // Current number store kar lo
         }
-        for(int i=0; i<B.length; i++){
-            int target = A - B[i];
-            if(target == B[i])
-            {
-                if(map.get(target)>1) return 1;
-            }
-            else {
-                if(map.containsKey(target)) return 1;
-            }
-        }
-        return 0;
+        return 0;  // Pair nahi mila
     }
 }
 
