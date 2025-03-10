@@ -33,7 +33,7 @@ Welcome to the **Ultimate DSA Guide**! This repository contains solutions, expla
 ✔️ **Graphs** - 33 questions  
 ✔️ **Dynamic Programming (DP)** - 45 questions  
 
-✨ **Total Questions:** 420 🔥
+✨ **Total Questions:** 431 🔥
 
 💡 **This repository contains enough DSA problems to help you crack MAANG & other top tech company interviews!** 🚀
 
