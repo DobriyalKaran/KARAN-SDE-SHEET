@@ -15,25 +15,25 @@ Welcome to the **Ultimate DSA Guide**! This repository contains solutions, expla
 ## 📌 Topics Covered
 
 ✔️ **Arrays** - 43 questions  
-✔️ **Bit Manipulation** - 22 questions  
-✔️ **Maths** - 27 questions  
+✔️ **Bit Manipulation** - 21 questions  
+✔️ **Maths** - 30 questions  
 ✔️ **Sorting** - 18 questions  
-✔️ **Binary Search** - 31 questions  
-✔️ **String** - 29 questions  
+✔️ **Binary Search** - 19 questions  
+✔️ **String** - 18 questions  
 ✔️ **Hashing** - 20 questions  
-✔️ **Greedy** - 16 questions  
-✔️ **Heaps** - 17 questions  
-✔️ **Trie** - 13 questions  
+✔️ **Greedy** - 10 questions  
+✔️ **Heaps** - 12 questions  
+✔️ **Trie** - 10 questions  
 ✔️ **Two Pointer** - 18 questions  
-✔️ **Stack and Queue** - 34 questions  
-✔️ **Linked List** - 47 questions  
-✔️ **Trees** - 53 questions  
+✔️ **Stack and Queue** - 21 questions  
+✔️ **Linked List** - 24 questions  
+✔️ **Trees** - 44 questions  
 ✔️ **Recursion** - 14 questions  
 ✔️ **Backtracking** - 20 questions  
-✔️ **Graphs** - 67 questions  
-✔️ **Dynamic Programming (DP)** - 82 questions  
+✔️ **Graphs** - 33 questions  
+✔️ **Dynamic Programming (DP)** - 45 questions  
 
-✨ **Total Questions:** 500+ 🔥
+✨ **Total Questions:** 420 🔥
 
 💡 **This repository contains enough DSA problems to help you crack MAANG & other top tech company interviews!** 🚀
 
