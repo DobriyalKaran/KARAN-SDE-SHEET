@@ -89,7 +89,7 @@ public class Main {
         {
             for(int j=0; j<m; j++)
             {
-                if(A[i][j] == 1 && vis[i][j] == false)
+                if(A[i][j] == 1 && !vis[i][j])
                 {
                     count++;
                     dfs(i,j,A,vis);
