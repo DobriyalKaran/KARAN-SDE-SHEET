@@ -88,14 +88,16 @@ public class Main {
         }
 
         // Step 2: Pehla BFS (Root se farthest node find karo)
-        int firstFarthest = bfs(root, adj, N);
+        int[] firstBFS = bfs(root, adj, N);
+        int firstFarthest = firstBFS[0];  // Farthest node from root
 
         // Step 3: Dusra BFS (Diameter nikalna)
-        int diameter = bfs(firstFarthest, adj, N);
+        int[] secondBFS = bfs(firstFarthest, adj, N);
+        int diameter = secondBFS[1];  // Max distance found
 
         return diameter;
     }
-    private static int bfs(int start, List<List<Integer>> adj, int N) {
+    private static int[] bfs(int start, List<List<Integer>> adj, int N) {
         Queue<Integer> q = new LinkedList<>();
         int[] dist = new int[N];
         Arrays.fill(dist, -1);
@@ -117,7 +119,7 @@ public class Main {
                 }
             }
         }
-        return maxDist;  // BFS ka final longest distance
+        return new int[]{farthestNode, maxDist};  // Return {farthest node, max distance}
     }
 }
 // TC : O(N)
