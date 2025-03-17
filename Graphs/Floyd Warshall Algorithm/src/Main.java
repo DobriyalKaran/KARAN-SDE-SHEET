@@ -85,8 +85,20 @@ public class Main {
                 }
             }
         }
+        // Step 3: Negative Cycle Detection
+        for (int i = 0; i < n; i++) {
+            if (A[i][i] < 0) {  // Negative cycle detected
+                for (int j = 0; j < n; j++) {
+                    for (int k = 0; k < n; k++) {
+                        if (A[j][i] != Integer.MAX_VALUE && A[i][k] != Integer.MAX_VALUE) {
+                            A[j][k] = -1; // Mark all affected nodes as -1
+                        }
+                    }
+                }
+            }
+        }
 
-        // Step 3: Convert INF back to -1
+        // Step 4: Convert INF back to -1
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < n; j++) {
                 if(A[i][j] == Integer.MAX_VALUE) A[i][j] = -1;
