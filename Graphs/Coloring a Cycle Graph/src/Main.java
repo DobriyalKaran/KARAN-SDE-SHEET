@@ -45,7 +45,7 @@ Output 2:
  2
  */
 
-// A biprtite graph if it has odd length cycle answer is 3 else 2.
+// A Biprtite graph if it has odd length cycle answer is 3 else 2.
 public class Main {
     public static void main(String[] args) {
         int A = 2;
