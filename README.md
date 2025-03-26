@@ -30,7 +30,7 @@ Welcome to the **Ultimate DSA Guide**! This repository contains solutions, expla
 ✔️ **Trees** - 44 questions  
 ✔️ **Recursion** - 14 questions  
 ✔️ **Backtracking** - 20 questions  
-✔️ **Graphs** - 33 questions  
+✔️ **Graphs** - 48 questions  
 ✔️ **Dynamic Programming (DP)** - 45 questions  
 
 ✨ **Total Questions:** 431 🔥
