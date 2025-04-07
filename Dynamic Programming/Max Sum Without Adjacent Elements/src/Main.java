@@ -86,5 +86,5 @@ public class Main {
         return dp[n][m] = Math.max(pick,notPick);
     }
 }
-// TC : O(N X M)
-// SC : O(N X M)
+// TC : O(N)
+// SC : O(N)
